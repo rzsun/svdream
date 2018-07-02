@@ -1,6 +1,6 @@
 # https://leetcode.com/problems/balanced-binary-tree/description/
 
-# Definition for a  binary tree node
+# Definition for a binary tree node
 # class TreeNode:
 #     def __init__(self, x):
 #         self.val = x
