@@ -1,4 +1,4 @@
-// https://leetcode.com/submissions/detail/111192593/
+// https://leetcode.com/problems/generate-parentheses/description/
 
 public class Solution {
     public IList<string> GenerateParenthesis(int n) {
