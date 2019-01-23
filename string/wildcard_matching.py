@@ -15,7 +15,6 @@ class Solution:
             return s == p
 
         for i in range(0, len(p)):
-            print ("matching " + p[i])
 
             if i == 0:
                 # star can match all prefixes
