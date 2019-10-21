@@ -20,7 +20,6 @@ def longestSubstr(s, ignore):
     
     return max_start, max_end
 
-
 def threeLongestSubstr(s):
     uniqe_res = set()
 
@@ -56,3 +55,11 @@ def threeLongestSubstrBruteForce(s):
     lengths.sort()
     lengths.reverse()
     return lengths[0:3]
+
+
+for i in range(0,100000):
+    import string, random
+    letters = ['a', 'b', 'c', 'd']
+    s = ''.join(random.choice(letters) for i in range(random.randint(3, 12)))
+    if not threeLongestSubstrBruteForce(s) == threeLongestSubstr(s):
+        print(s)
