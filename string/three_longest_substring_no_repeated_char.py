@@ -20,6 +20,7 @@ def longestSubstr(s, ignore):
     
     return max_start, max_end
 
+
 def threeLongestSubstr(s):
     uniqe_res = set()
 
@@ -43,7 +44,15 @@ def threeLongestSubstr(s):
     longests_len.reverse()
     return longests_len[0:3]
 
-# print(threeLongestSubstr("abcdd"))
-# print(threeLongestSubstr("abcddefgg"))
-# print(threeLongestSubstr("abc"))
-# print(threeLongestSubstr("abccbdaabc"))
+
+
+def threeLongestSubstrBruteForce(s):
+    substrings = [s[i: j] for i in range(len(s)) for j in range(i + 1, len(s) + 1)]
+    lengths = []
+    for s in substrings:
+        if len(set(s)) == len(s):
+            lengths.append(len(s))
+
+    lengths.sort()
+    lengths.reverse()
+    return lengths[0:3]
